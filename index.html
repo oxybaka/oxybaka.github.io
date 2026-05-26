@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oxybaka Art</title>
+    <meta
+      name="description"
+      content="Illustration portfolio and commission information for Oxybaka Art."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top">Oxybaka</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#gallery">Gallery</a>
+          <a href="#commissions">Commissions</a>
+          <a href="#about">About</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Illustration • Character Art • Commissions Open</p>
+            <h1>Art portfolio with a commission flow that is simple enough to run today.</h1>
+            <p class="hero-text">
+              Show finished work, set expectations clearly, and send commission requests through a form
+              that is easy to manage on your phone or desktop.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#commissions">Commission Info</a>
+              <a class="button button-secondary" href="#gallery">View Gallery</a>
+            </div>
+          </div>
+          <aside class="hero-panel">
+            <p class="panel-kicker">Recommended setup</p>
+            <h2>Start with Google Forms.</h2>
+            <ul class="panel-list">
+              <li>No backend to maintain</li>
+              <li>Easy file uploads and required questions</li>
+              <li>Responses land in Google Sheets automatically</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="section section-gallery" id="gallery">
+          <div class="section-heading">
+            <p class="eyebrow">Selected Work</p>
+            <h2>Swap these placeholders with finished pieces, WIPs, or commission samples.</h2>
+          </div>
+          <div class="gallery-grid">
+            <article class="art-card accent-coral">
+              <div class="art-swatch"></div>
+              <h3>Painterly Character Portrait</h3>
+              <p>Use this slot for your strongest recent work and the kind of rendering clients ask for most.</p>
+            </article>
+            <article class="art-card accent-gold">
+              <div class="art-swatch"></div>
+              <h3>Stylized Full Body</h3>
+              <p>Show variety in pose, costume design, and silhouette so commissioners understand your range.</p>
+            </article>
+            <article class="art-card accent-sky">
+              <div class="art-swatch"></div>
+              <h3>Illustrated Scene</h3>
+              <p>Include one image with lighting or background work if you want to attract more ambitious briefs.</p>
+            </article>
+            <article class="art-card accent-mint">
+              <div class="art-swatch"></div>
+              <h3>Commission Sample Sheet</h3>
+              <p>Use this space for pricing examples, bust versus half body examples, or terms snapshots.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-commission" id="commissions">
+          <div class="section-heading compact">
+            <p class="eyebrow">Commissions</p>
+            <h2>Clear pricing and a lightweight intake process usually beats a custom contact form.</h2>
+          </div>
+          <div class="commission-layout">
+            <div class="rates-card">
+              <h3>Example pricing</h3>
+              <dl class="rates-list">
+                <div>
+                  <dt>Bust</dt>
+                  <dd>$45+</dd>
+                </div>
+                <div>
+                  <dt>Half body</dt>
+                  <dd>$70+</dd>
+                </div>
+                <div>
+                  <dt>Full body</dt>
+                  <dd>$100+</dd>
+                </div>
+                <div>
+                  <dt>Complex background</dt>
+                  <dd>Quoted separately</dd>
+                </div>
+              </dl>
+              <p class="supporting-copy">
+                Replace these prices with your real rates. If you prefer not to show exact numbers, list a starting
+                price and request a brief in the form.
+              </p>
+            </div>
+
+            <div class="process-card">
+              <h3>How to request</h3>
+              <ol class="process-list">
+                <li>Read the commission terms and choose a commission type.</li>
+                <li>Open the request form and include references, deadline, and usage details.</li>
+                <li>I review requests and reply with confirmation, quote, and timeline.</li>
+              </ol>
+              <div class="terms-box">
+                <p class="terms-title">Suggested form questions</p>
+                <p>Name, email, commission type, references, deadline, commercial or personal use, and extra notes.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <div class="form-copy">
+              <p class="eyebrow">Commission Form</p>
+              <h3 id="form-title">Use the request form to send your brief.</h3>
+              <p id="form-description">
+                This site is set up for Google Forms because it is the easiest option to launch and maintain.
+              </p>
+              <a id="form-link" class="button button-primary" href="#" target="_blank" rel="noreferrer noopener">
+                Add your Google Form link in script.js
+              </a>
+            </div>
+            <div class="form-embed-shell" id="form-embed-shell" hidden>
+              <iframe
+                id="form-embed"
+                title="Commission request form"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-about" id="about">
+          <div class="about-copy">
+            <p class="eyebrow">About</p>
+            <h2>Write a short artist bio here.</h2>
+            <p>
+              Mention your style, favorite subjects, turnaround expectations, and where people can follow your work.
+              Keep it brief and specific.
+            </p>
+          </div>
+          <div class="about-notes">
+            <div>
+              <h3>Good first launch checklist</h3>
+              <p>Replace the sample art cards, update your rates, paste your Google Form URL, and publish.</p>
+            </div>
+            <div>
+              <h3>When to upgrade beyond Google Forms</h3>
+              <p>Only after you need payments, client logins, automated booking, or custom workflows.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
