@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Paytone+One&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -21,74 +21,65 @@
       <header class="site-header">
         <a class="brand" href="#top">Oxybaka</a>
         <nav class="site-nav" aria-label="Primary">
-          <a href="#gallery">Gallery</a>
+          <a href="gallery.html">Gallery</a>
           <a href="#commissions">Commissions</a>
           <a href="#about">About</a>
         </nav>
       </header>
 
       <main id="top">
+        <section class="hero-banner" aria-label="Featured artwork banner">
+          <div class="hero-banner-track">
+            <img src="gallery/cleaninnn.png" alt="Featured Oxybaka artwork" class="hero-banner-image hero-banner-image-large" />
+            <img src="gallery/Illustration17(2).png" alt="Lagtrain sketch artwork" class="hero-banner-image" />
+            <img src="gallery/megumi chibi b.png" alt="Megumi Chibi artwork" class="hero-banner-image" />
+          </div>
+          <div class="hero-banner-overlay">
+            <p class="hero-banner-kicker">Oxybaka</p>
+            <p class="hero-banner-title">Character art, sketches, and finished pieces.</p>
+          </div>
+        </section>
+
         <section class="hero">
           <div class="hero-copy">
-            <p class="eyebrow">Illustration • Character Art • Commissions Open</p>
-            <h1>Art portfolio with a commission flow that is simple enough to run today.</h1>
+            <p class="eyebrow">Oxybaka • Illustration • Commissions Open</p>
+            <h1>Character art, illustrations, and commission work by Oxybaka.</h1>
             <p class="hero-text">
-              Show finished work, set expectations clearly, and send commission requests through a form
-              that is easy to manage on your phone or desktop.
+              A collection of recent work, commission samples, and the best places to keep up with what I am drawing.
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="#commissions">Commission Info</a>
-              <a class="button button-secondary" href="#gallery">View Gallery</a>
+              <a class="button button-secondary" href="gallery.html">View Gallery</a>
             </div>
           </div>
           <aside class="hero-panel">
-            <p class="panel-kicker">Recommended setup</p>
-            <h2>Start with Google Forms.</h2>
+            <p class="panel-kicker">Currently Open</p>
+            <h2>Commission requests are open.</h2>
             <ul class="panel-list">
-              <li>No backend to maintain</li>
-              <li>Easy file uploads and required questions</li>
-              <li>Responses land in Google Sheets automatically</li>
+              <li>Character-focused commissions</li>
+              <li>Personal work and commission samples</li>
+              <li>Request details handled through the commission form</li>
             </ul>
           </aside>
         </section>
 
         <section class="section section-gallery" id="gallery">
-          <div class="section-heading">
+          <div class="section-heading section-heading-split">
             <p class="eyebrow">Selected Work</p>
-            <h2>Swap these placeholders with finished pieces, WIPs, or commission samples.</h2>
+            <h2>A few recent pieces from the full gallery.</h2>
+            <a class="button button-secondary button-inline" href="gallery.html">Open full gallery</a>
           </div>
-          <div class="gallery-grid">
-            <article class="art-card accent-coral">
-              <div class="art-swatch"></div>
-              <h3>Painterly Character Portrait</h3>
-              <p>Use this slot for your strongest recent work and the kind of rendering clients ask for most.</p>
-            </article>
-            <article class="art-card accent-gold">
-              <div class="art-swatch"></div>
-              <h3>Stylized Full Body</h3>
-              <p>Show variety in pose, costume design, and silhouette so commissioners understand your range.</p>
-            </article>
-            <article class="art-card accent-sky">
-              <div class="art-swatch"></div>
-              <h3>Illustrated Scene</h3>
-              <p>Include one image with lighting or background work if you want to attract more ambitious briefs.</p>
-            </article>
-            <article class="art-card accent-mint">
-              <div class="art-swatch"></div>
-              <h3>Commission Sample Sheet</h3>
-              <p>Use this space for pricing examples, bust versus half body examples, or terms snapshots.</p>
-            </article>
-          </div>
+          <div class="gallery-grid" id="gallery-preview" data-gallery-mode="preview"></div>
         </section>
 
         <section class="section section-commission" id="commissions">
           <div class="section-heading compact">
             <p class="eyebrow">Commissions</p>
-            <h2>Clear pricing and a lightweight intake process usually beats a custom contact form.</h2>
+            <h2>Commission details and request info.</h2>
           </div>
           <div class="commission-layout">
             <div class="rates-card">
-              <h3>Example pricing</h3>
+              <h3>Pricing</h3>
               <dl class="rates-list">
                 <div>
                   <dt>Bust</dt>
@@ -107,10 +98,7 @@
                   <dd>Quoted separately</dd>
                 </div>
               </dl>
-              <p class="supporting-copy">
-                Replace these prices with your real rates. If you prefer not to show exact numbers, list a starting
-                price and request a brief in the form.
-              </p>
+              <p class="supporting-copy">Final quotes depend on character complexity, props, and background needs.</p>
             </div>
 
             <div class="process-card">
@@ -132,10 +120,10 @@
               <p class="eyebrow">Commission Form</p>
               <h3 id="form-title">Use the request form to send your brief.</h3>
               <p id="form-description">
-                This site is set up for Google Forms because it is the easiest option to launch and maintain.
+                Send the basic details for your request, references, and deadline through the commission form.
               </p>
               <a id="form-link" class="button button-primary" href="#" target="_blank" rel="noreferrer noopener">
-                Add your Google Form link in script.js
+                Commission form coming soon
               </a>
             </div>
             <div class="form-embed-shell" id="form-embed-shell" hidden>
@@ -152,20 +140,26 @@
         <section class="section section-about" id="about">
           <div class="about-copy">
             <p class="eyebrow">About</p>
-            <h2>Write a short artist bio here.</h2>
+            <h2>Oxybaka</h2>
             <p>
-              Mention your style, favorite subjects, turnaround expectations, and where people can follow your work.
-              Keep it brief and specific.
+              I make character art, illustrations, and commission work under the name Oxybaka. You can find me on
+              Ko-fi, X, Twitch, and Instagram under the same handle.
             </p>
+            <div class="social-links" aria-label="Social links">
+              <a href="https://ko-fi.com/oxybaka" target="_blank" rel="noreferrer noopener">Ko-fi</a>
+              <a href="https://x.com/oxybaka" target="_blank" rel="noreferrer noopener">X</a>
+              <a href="https://www.twitch.tv/oxybaka" target="_blank" rel="noreferrer noopener">Twitch</a>
+              <a href="https://www.instagram.com/oxybaka" target="_blank" rel="noreferrer noopener">Instagram</a>
+            </div>
           </div>
           <div class="about-notes">
             <div>
-              <h3>Good first launch checklist</h3>
-              <p>Replace the sample art cards, update your rates, paste your Google Form URL, and publish.</p>
+              <h3>Where to follow</h3>
+              <p>Find new work, updates, and links under the same Oxybaka handle across platforms.</p>
             </div>
             <div>
-              <h3>When to upgrade beyond Google Forms</h3>
-              <p>Only after you need payments, client logins, automated booking, or custom workflows.</p>
+              <h3>Commission requests</h3>
+              <p>Use the commission section for pricing and request details, then send your brief through the form.</p>
             </div>
           </div>
         </section>
