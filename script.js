@@ -2,8 +2,11 @@ const commissionForm = {
   title: 'Commission request form',
   description:
     'Send the basic details for your request, references, and deadline through the commission form.',
-  formUrl: '',
-  embedUrl: '',
+  formUrl:
+    'https://docs.google.com/forms/d/e/1FAIpQLSeZNxI-ys6OTB11PpYg_zNIrPovyF0K6e_3PGyi3f3oKuBGTQ/viewform',
+  embedUrl:
+    'https://docs.google.com/forms/d/e/1FAIpQLSeZNxI-ys6OTB11PpYg_zNIrPovyF0K6e_3PGyi3f3oKuBGTQ/viewform?embedded=true',
+  embedHeight: 1378,
 }
 
 const galleryItems = [
@@ -81,6 +84,12 @@ if (formTitle && formDescription && formLink) {
   if (commissionForm.embedUrl && formEmbedShell && formEmbed) {
     formEmbedShell.hidden = false
     formEmbed.src = commissionForm.embedUrl
+
+    if (commissionForm.embedHeight) {
+      const embedHeight = `${commissionForm.embedHeight}px`
+      formEmbedShell.style.minHeight = embedHeight
+      formEmbed.style.minHeight = embedHeight
+    }
   }
 }
 
